@@ -42,5 +42,5 @@ Khara transforms a standard smartphone into a forensic workstation. By combining
 - **Sync Protocol:** Seamless one-tap export to Office Kit via secure JSON-LD.
 
 ## Team Members
-- [Your Name / Placeholder]
-- [Teammate 1 / Placeholder]
+- Suhas B Hiremath / Leader
+- B S Sachin
