@@ -1,0 +1,29 @@
+# Standard Android/Gradle .gitignore
+
+# Built artifacts
+bin/
+gen/
+out/
+build/
+.gradle/
+.navigation/
+
+# IDE files
+.idea/
+*.iml
+*.iws
+local.properties
+.DS_Store
+
+# Signing files
+*.jks
+*.keystore
+
+# TFLite assets (unless you want to track them, but usually they are binary blobs)
+# /app/src/main/assets/*.tflite
+
+# Gradle safe-mode
+.gradle-home
+
+# Capture cache
+/app/src/main/cache/
