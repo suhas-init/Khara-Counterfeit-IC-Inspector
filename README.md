@@ -80,5 +80,5 @@ Neural network inference routes to the Qualcomm Hexagon NPU via the QNN Delegate
 
 - Suhas B Hiremath — Team Lead
 - B S Sachin — Team Member
-
+- Gourav raj - Team Member
 Track: Open Innovation
