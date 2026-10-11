@@ -16,22 +16,24 @@ class HapticHelper(context: Context) {
     }
 
     fun triggerPassFeedback() {
-        val timings = longArrayOf(0, 50, 50, 50)
-        val amplitudes = intArrayOf(0, 150, 0, 150)
+        val passPattern = longArrayOf(0, 50, 100, 50)
+        val passAmplitudes = intArrayOf(0, 200, 0, 180)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            vibrator.vibrate(VibrationEffect.createWaveform(timings, amplitudes, -1))
+            vibrator.vibrate(VibrationEffect.createWaveform(passPattern, passAmplitudes, -1))
         } else {
             @Suppress("DEPRECATION")
-            vibrator.vibrate(timings, -1)
+            vibrator.vibrate(passPattern, -1)
         }
     }
 
     fun triggerFlaggedFeedback() {
+        val flagPattern = longArrayOf(0, 400)
+        val flagAmplitudes = intArrayOf(0, 255)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            vibrator.vibrate(VibrationEffect.createOneShot(300, 255))
+            vibrator.vibrate(VibrationEffect.createWaveform(flagPattern, flagAmplitudes, -1))
         } else {
             @Suppress("DEPRECATION")
-            vibrator.vibrate(300)
+            vibrator.vibrate(flagPattern, -1)
         }
     }
 }
